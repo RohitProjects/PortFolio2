@@ -244,7 +244,7 @@ footer p{
 @media only screen and (max-width:445px) {
   
     nav .max-width .icon-menu{
-        margin-right: 45px;
+        margin-right: 65px;
         padding: 45px;  
     }
 
@@ -261,11 +261,13 @@ footer p{
         margin-left: 35px;
         font-size: 15px;
     }
+    
+     .ski .sk-content{
+        padding: 0 10px 0 10px;
+    }
 
     .ski .sk-content .skill p{
-
         font-size: 10px;
-      
     }
 }
 
