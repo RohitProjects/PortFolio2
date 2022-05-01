@@ -312,8 +312,8 @@ footer p{
 
 @media only screen and (max-width:458px) {
     nav .max-width .icon-menu li a ion-icon{
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
     }
 
     .con form{
