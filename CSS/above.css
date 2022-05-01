@@ -220,9 +220,17 @@ footer p{
         margin-top: 150px;
     }
     nav .max-width .icon-menu li a ion-icon{
-       height: 20px;
-       width: 20px;
+       height: 15px;
+       width: 15px;
    }
+    
+    .abo{
+        height: 100vh;  
+    }
+    
+    .abo h2{   
+        font-size: 35px;    
+    }
 
    .abo p{    
         width: 250px;
