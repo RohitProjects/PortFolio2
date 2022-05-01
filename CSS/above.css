@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: crimson;
+    overflow: hidden;
+}
+
+.navbar{
+    position:sticky;
+    top: 0;
+}
+
+
+nav .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .max-width .logo{
+    margin:25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .max-width .logo a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav .max-width a{
+    color: whitesmoke;
+}
+
+nav .max-width a span{
+    color: rgb(224, 219, 231);
+}
+
+nav .max-width .menu{
+    list-style: none;
+    display: flex;
+    margin-right: 45px;
+    padding: 25px;
+    
+}
+
+nav .max-width .icon-menu{
+    
+    display: none;
+}
+
+
+nav .max-width .menu li a{
+    text-decoration: none;
+    margin-left: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav .max-width .menu li a:hover{
+    color: rgb(6, 250, 38);
+}
+
+
+/* About section */
+
+.abo{
+    text-align: center;
+    background-color: beige;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.abo h2{
+    padding-top: 25px;
+    font-size: 55px;
+    color: rgb(222, 132, 23);
+}
+
+.abo .about-content{
+    padding-top: 50px;
+}
+
+.abo .about-content img{
+    border-radius: 15px;
+}
+
+.abo p{
+    text-align:start;
+    margin-left: 33%;
+    width: 600px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* footer section */
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(78, 60, 60);
+    overflow: hidden;
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width:1791px) {
+    .abo-content{
+        margin-top: 70px;
+    }
+    
+}
+
+@media only screen and (max-width:1095px) {
+    .abo p{   
+        margin-left: 25%;   
+    }   
+}
+
+@media only screen and (max-width:1095px) {
+    .abo p{   
+        margin-left: 20%;   
+    }   
+}
+
+@media only screen and (max-width:753px) {
+    nav .max-width .menu{
+        display: none;
+    }
+   
+    nav .max-width .icon-menu{
+        display: block;
+        list-style: none;
+        display: flex;
+        margin-right: 65px;
+        padding: 45px;
+        font-size: 50px;
+        font-weight: bold;
+       
+    }
+
+    nav .max-width .icon-menu li a ion-icon{
+        height: 33px;
+        width: 33px;
+    }
+    
+    
+    nav .max-width .icon-menu li a{
+        text-decoration: none;
+        margin-left: 45px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    nav .max-width .icon-menu li a:hover{
+        color: rgb(6, 250, 38);
+    }  
+
+    .abo p{    
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:636px) {
+    .abo p{   
+        margin-left: 15%;   
+    } 
+    .abo p{    
+        width: 400px;
+    } 
+    
+    nav .max-width .logo{
+        display: none;
+     }
+     
+     nav .max-width .icon-menu li a{
+         margin-left: 30px; 
+         padding-left: 20px; 
+     }
+
+     nav .max-width .icon-menu li a ion-icon{
+        height: 45px;
+        width: 45px;
+    }
+    
+}
+
+@media only screen and (max-width:537px) {
+    nav .max-width .icon-menu li a ion-icon{
+       height: 30px;
+       width: 30px;
+   }
+}
+
+@media only screen and (max-width:475px) {
+    .abo-content{
+        margin-top: 150px;
+    }
+    nav .max-width .icon-menu li a ion-icon{
+       height: 20px;
+       width: 20px;
+   }
+
+   .abo p{    
+        width: 250px;
+    }
+
+    .abo p{   
+        margin-left: 20%;   
+    }
+
+    nav .max-width .icon-menu li a{
+        margin-left: 25px; 
+        padding-left: 10px; 
+    }
+}

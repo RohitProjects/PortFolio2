@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: crimson;
+    overflow: hidden;
+}
+
+.navbar{
+    position:sticky;
+    top: 0;
+}
+
+
+nav .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .max-width .logo{
+    margin:25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .max-width .logo a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav .max-width a{
+    color: whitesmoke;
+}
+
+nav .max-width a span{
+    color: rgb(224, 219, 231);
+}
+
+nav .max-width .menu{
+    list-style: none;
+    display: flex;
+    margin-right: 45px;
+    padding: 25px;
+    
+}
+
+nav .max-width .icon-menu{
+    
+    display: none;
+}
+
+
+nav .max-width .menu li a{
+    text-decoration: none;
+    margin-left: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav .max-width .menu li a:hover{
+    color: rgb(6, 250, 38);
+}
+
+
+/* Home section */
+
+.hom{
+    background-image: url(image/home-back.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+   
+}
+
+.home-content{
+    padding-top: 150px;
+    padding-left: 390px;
+}
+
+.home-content .text1{
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+.home-content .text2{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: rgb(255, 0, 187);
+}
+
+.home-content .text3{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.home-content .text3:hover{
+    color: rgb(69, 60, 60);
+}
+
+.home-content .btn{
+    padding-top: 15px;
+}
+
+
+.home-content input{
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 200px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.home-content input:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+
+/* footer section */
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(78, 60, 60);
+    overflow: hidden;
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width:1791px){
+    .hom{  
+        height: 80vh;  
+    }
+    
+    .home-content{
+        padding-top: 200px;
+        padding-left: 490px;
+    }  
+}
+
+@media only screen and (max-width:1183px){ 
+    .home-content{
+        padding-top: 300px;
+        padding-left: 340px;
+    }  
+}
+
+@media only screen and (max-width:888px){
+    
+    .home-content{
+        padding-top: 300px;
+        padding-left: 200px;
+    }  
+}
+
+@media only screen and (max-width:780px){
+
+    nav .max-width .menu{
+        display: none;
+    }
+   
+    nav .max-width .icon-menu{
+        display: block;
+        list-style: none;
+        display: flex;
+        margin-right: 65px;
+        padding: 45px;
+        font-size: 50px;
+        font-weight: bold;
+       
+    }
+
+    nav .max-width .icon-menu li a ion-icon{
+        height: 33px;
+        width: 33px;
+    }
+    
+    
+    nav .max-width .icon-menu li a{
+        text-decoration: none;
+        margin-left: 45px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    nav .max-width .icon-menu li a:hover{
+        color: rgb(6, 250, 38);
+    }
+    
+    .home-content{
+        padding-top: 300px;
+        padding-left: 200px;
+    }  
+}
+
+@media only screen and (max-width:780px){
+    nav .max-width .icon-menu li a{  
+        margin-left: 30px;
+    }
+    
+    .home-content{
+        padding-top: 300px;
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width:563px){
+    nav .max-width .logo{
+       display: none;
+    }
+    
+    nav .max-width .icon-menu li a{
+        margin-left: 50px;  
+    }
+
+    .home-content{
+        padding-top: 300px;
+        padding-left: 50px;
+    }
+
+    .home-content .text1{
+        font-size: 25px;
+        word-spacing: 1px;    
+    }
+    
+    .home-content .text2{
+        font-size: 45px;       
+    }
+    
+    .home-content .text3{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:463px){
+    nav .max-width .icon-menu li a{
+        margin-left: 28px;  
+    }
+
+    nav .max-width .icon-menu{   
+        margin-right: 25px;
+        padding: 35px; 
+    }
+    
+}

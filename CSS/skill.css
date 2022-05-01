@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: crimson;
+    overflow: hidden;
+}
+
+.navbar{
+    position:sticky;
+    top: 0;
+}
+
+
+nav .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .max-width .logo{
+    margin:25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .max-width .logo a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav .max-width a{
+    color: whitesmoke;
+}
+
+nav .max-width a span{
+    color: rgb(224, 219, 231);
+}
+
+nav .max-width .menu{
+    list-style: none;
+    display: flex;
+    margin-right: 45px;
+    padding: 25px;
+    
+}
+
+nav .max-width .icon-menu{
+    
+    display: none;
+}
+
+
+nav .max-width .menu li a{
+    text-decoration: none;
+    margin-left: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav .max-width .menu li a:hover{
+    color: rgb(6, 250, 38);
+}
+
+/*skills*/
+
+.ski{
+    background-color:rgb(246, 250, 250);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ski h2{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(222, 132, 23);
+}
+
+.ski .sk-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 350px 0 350px;
+}
+
+.ski .sk-content .skill p{
+    padding-top: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ski .sk-content .skill p span{
+    padding: 10px;
+    background-color: rgb(78, 60, 60);
+    color: white;
+    border-radius: 10px;
+    
+}
+
+
+/* footer section */
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(66, 53, 53);
+    overflow: hidden;
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width:1759px) {
+    .skill-content{
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width:1492px) {
+    .ski .sk-content{
+        padding: 0 250px 0 250px;
+    }
+}
+
+@media only screen and (max-width:1009px) {
+    .ski .sk-content{
+        padding: 0 200px 0 200px;
+    }
+}
+
+@media only screen and (max-width:859px) {
+    nav .max-width .menu{
+        display: none;
+    }
+   
+    nav .max-width .icon-menu{
+        display: block;
+        list-style: none;
+        display: flex;
+        margin-right: 65px;
+        padding: 45px;
+        font-size: 50px;
+        font-weight: bold;
+       
+    }
+
+    nav .max-width .icon-menu li a ion-icon{
+        height: 35px;
+        width: 35px;
+    }
+    
+    
+    nav .max-width .icon-menu li a{
+        text-decoration: none;
+        margin-left: 45px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    nav .max-width .icon-menu li a:hover{
+        color: rgb(6, 250, 38);
+    } 
+    .ski .sk-content{
+        padding: 0 150px 0 150px;
+    }
+}
+
+@media only screen and (max-width:714px) {
+    .ski .sk-content{
+        padding: 0 100px 0 100px;
+    }
+
+    nav .max-width .icon-menu{
+        margin-right: 45px;
+        padding: 45px;  
+    }
+
+    nav .max-width .icon-menu li a ion-icon{
+        height: 30px;
+        width: 30px;
+    }
+     
+    nav .max-width .icon-menu li a{   
+        margin-left: 35px;   
+    }
+}
+
+@media only screen and (max-width:714px) {
+    .ski .sk-content{
+        padding: 0 0px 0 0px;
+    }
+
+    nav .max-width .icon-menu{
+        margin-right: 25px;  
+    }
+
+    nav .max-width .icon-menu li a ion-icon{
+        height: 25px;
+        width: 25px;
+    } 
+}
+
+@media only screen and (max-width:549px) {
+  
+    nav .max-width .logo{
+        display: none;
+    }
+
+    nav .max-width .icon-menu{
+        margin-right: 45px;
+        padding: 45px;  
+    }
+
+    nav .max-width .icon-menu li a ion-icon{
+        height: 35px;
+        width: 35px;
+    }
+     
+    nav .max-width .icon-menu li a{   
+        margin-left: 45px;   
+    }
+}
+
+@media only screen and (max-width:445px) {
+  
+    nav .max-width .icon-menu{
+        margin-right: 45px;
+        padding: 45px;  
+    }
+
+    nav .max-width .icon-menu li a ion-icon{
+        height: 25px;
+        width: 25px;
+    }
+     
+    nav .max-width .icon-menu li a{   
+        margin-left: 25px;   
+    }
+
+    nav .max-width .icon-menu li a{
+        margin-left: 35px;
+        font-size: 15px;
+    }
+
+    .ski .sk-content .skill p{
+
+        font-size: 10px;
+      
+    }
+}
+
+
